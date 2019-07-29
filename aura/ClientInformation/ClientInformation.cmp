@@ -1,0 +1,73 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"/>-->
+    
+<ltng:require  scripts="{!$Resource.CanvasJS}" afterScriptsLoaded="{!c.plotGraph}" />
+    
+    <!--div id="chartContainer" style="height: 300px; width: 100%;">
+    </div-->
+    
+    <div class="slds-card__header">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_3-of-12">
+                <div class="total_assesment">
+                    <p>Total Client Assets</p>
+                   	<h1>$ 1.6 B</h1>
+                </div>
+            </div>
+            <div class="slds-col slds-size_3-of-12">
+                <div class="client_managed">
+                	<h3>Clients Managed</h3>
+                    <h2>2300</h2>
+                </div>
+                <br/>
+                <div class="client_managed">
+                	<h3>Goals Value</h3>
+                    <h2>$ 1.2 B</h2>
+                </div>
+            </div>
+            <!--<div class="slds-col slds-size_2-of-12">
+                <div class="client_managed client_managed1 slds-clearfix">
+                    
+                    <div class="slds-float_none">
+                    	<img src="{!$Resource.DonutChart}"/>
+                    </div>
+                </div>
+            </div>-->
+            <div class="slds-col slds-size_6-of-12">
+                <div class="client_managed client_managed1 slds-clearfix">
+                    <h3 class="slds-float_left slds-text-align_left">Chat Investment Distribution</h3>
+                	<div id="chartContainer" style="height: 203px; width: 100%; margin-top: 15px;"></div>
+                </div>           
+            </div>
+        </div>
+        <br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="client_managed client_managed1 client_managed2 slds-clearfix">
+                    <div class="slds-col slds-size_12-of-12">
+                        <h3 class="slds-text-align_left">Stock Market</h3>
+                        <br/>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_3-of-12">
+                                <h4 class="slds-text-align_left">S &amp; P 500</h4>
+                                <h2 class="slds-text-align_left">2,995.82.00</h2>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <h4 class="slds-text-align_left">Down Jones</h4>
+                                <h2 class="slds-text-align_left">26,966.00</h2>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <h4 class="slds-text-align_left">NASDAQ</h4>
+                                <h2 class="slds-text-align_left">8,173.23</h2>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <h4 class="slds-text-align_left">NYSE</h4>
+                                <h2 class="slds-text-align_left">10,173.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

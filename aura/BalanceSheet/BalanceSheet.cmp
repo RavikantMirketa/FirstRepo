@@ -1,0 +1,28 @@
+<aura:component >
+    <div class="slds-card__header">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_3-of-12">
+                <div class="client_managed">
+                    <div class="slds-grid slds-p-top_small slds-p-bottom_small">
+                    	<div class="slds-col slds-size_6-of-12">
+                        	<h3>Accounts</h3>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <div class="slds-clearfix">
+                                <button class="slds-button slds-float_right" type="button">+ Add New Account</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="net-worth">
+                    	<div class="slds-grid slds-p-top_small slds-p-bottom_small">
+                    		<div class="slds-col slds-size_12-of-12">
+                                <h4>Net Worth</h4>
+                                <h1>$1,234,654.55</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+    </div>
+</aura:component>

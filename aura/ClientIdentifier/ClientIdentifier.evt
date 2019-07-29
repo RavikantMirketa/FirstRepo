@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="Cid" type="Id"/>
+    <aura:attribute name="NameSpace" type="Id"/>
+</aura:event>
